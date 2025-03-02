@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LALE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<button id="scrollToTop" class="btn btn-primary" onclick="scrollToTop()">↑</button>
+
+<body>
+    <header class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Botón hamburguesa -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Logo más grande -->
+                <a href="" class="logo"><img src="assets/imagenes/lale.l.png"></a>
+            </div>
+    
+            <!-- Menú de navegación alineado a la derecha -->
+            <div class="collapse navbar-collapse navbar-right" id="navbar-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="hablemos.html">Hablemos del Parkinson</a></li>
+    
+                    <!-- Trabajemos Juntos con submenú -->
+                    <li class="dropdown">
+                        <a href="trabajemos.html" class="dropdown-toggle" id="trabajemos-link" role="button" aria-haspopup="true" aria-expanded="false">
+                            Trabajemos Juntos <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="testimonio.html">Testimonio</a></li>
+                            <li><a href="repertorio.html">Repertorio</a></li>
+                            <li><a href="directorio.html">Directorio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        $(document).ready(function () {
+            $('#trabajemos-link').click(function (e) {
+                // Verifica si el menú está abierto
+                var isOpen = $(this).parent().hasClass('open');
+    
+                if (!isOpen) {
+                    // Si está cerrado, abre el submenú y previene la navegación
+                    e.preventDefault();
+                    $(this).parent().addClass('open');
+                } else {
+                    // Si está abierto, permite navegar al enlace
+                    window.location.href = $(this).attr('href');
+                }
+            });
+        });
+    </script>
+    
+    <div class="wrap" style="background-image: url(assets/imagenes/manual-12.1.png);">
+        <div class="wrap-texto">
+            <h2>Hablemos del Parkinson</h2>
+        </div>
+</div>
+<div>
+    <section id="espacio"></section>
+</div>
+<div>
+<section id="descripcion">
+    <h4>La Enfermedad de Parkinson (EP)</h4>
+    <p>La Enfermedad de Parkinson (EP) es una enfermedad neurodegenerativa del sistema nervioso central, caracterizada por la muerte progresiva de las neuronas dopaminérgicas 
+        ubicadas en la sustancia negra del cerebro. Estas neuronas desempeñan un papel crucial en el control motor, y su degeneración provoca dificultades significativas
+         en el movimiento y otros síntomas relacionados.<br>
+    Además de los síntomas motores como temblor, rigidez y bradicinesia, los pacientes con Parkinson suelen experimentar síntomas
+     no motores como trastornos del sueño, depresión, ansiedad, deterioro cognitivo y alteraciones gastrointestinales, que también
+      impactan significativamente su calidad de vida.</p>
+</section>    
+</div>
+
+<div class="container">
+    <div class="text-box2">
+        &nbsp;&nbsp;&nbsp;&nbsp;La pérdida neuronal en la enfermedad de Parkinson provoca una marcada disminución en la disponibilidad de dopamina,
+         el principal neurotransmisor encargado de regular el movimiento. <br> &nbsp;&nbsp;&nbsp;Esta reducción afecta el funcionamiento de las estructuras 
+         cerebrales responsables del control motor, generando alteraciones significativas en la movilidad de quienes la padecen.
+
+La progresión de la enfermedad varía entre los pacientes: en algunos casos, el deterioro avanza lentamente, mientras
+que en otros progresa con mayor rapidez. <br>&nbsp;&nbsp;&nbsp;En términos generales, los trastornos motores iniciales tienden a intensificarse 
+con el tiempo, afectando primero un lado del cuerpo y extendiéndose eventualmente al lado opuesto.
+    </div>
+    <div class="text-box3">
+        <img src="assets/imagenes/cerebro.png" class="img-box2">
+
+      </div>
+        
+    </div>
+    <div>
+    <section id="descripcion">
+        <p>&nbsp;&nbsp;&nbsp;En México, se estima que cerca de 500 mil personas padecen la enfermedad de Parkinson, y su distribución varía considerablemente 
+            entre los estados. Esta cifra podría aumentar en los próximos años debido al envejecimiento de la población. El Parkinson no solo
+             afecta la movilidad de quienes lo padecen, sino que también impacta su calidad de vida y la de sus familias, quienes enfrentan 
+             desafíos en el acceso a tratamientos y cuidados especializados</p>
+
+             
+    </section>
+    <section id="descripcion">
+<img src="assets/imagenes/mapa.png" class="img-box4">
+    </section>
+
+    <p> Esta distribución geográfica sugiere que ciertos factores ambientales, genéticos y nutricionales
+        podrían influir en la mayor prevalencia en ciertas regiones, formando lo que algunos investigadores
+        denominan un "cinturón de Parkinson" en el noroeste y occidente del país. Además, la incidencia de
+        la enfermedad aumenta significativamente con la edad, especialmente en personas mayores de 65
+        años.</p>
+    </div>
+        <h4>Causas</h4>
+            <p>La EP es causada por una combinación de factores genéticos y ambientales. Entre los factores genéticos, se estima que entre el 10% y el 15% 
+             de los casos están relacionados con mutaciones específicas. En cuanto a los factores ambientales, se incluyen la exposición a pesticidas, metales pesados y 
+             lesiones en la cabeza, entre otros.</p>
+
+        <h4>Manifestaciones</h4>
+        <div class="image-text-container">
+            <img src="assets/imagenes/t.m_Mesa de trabajo 1 copia.png" alt="Imagen circular">
+            <div class="text-box5">
+                <h5>Bradicinesia</h5>
+            Significa la ralentización del movimiento o reducción progresiva de su velocidad (o
+            vacilaciones / paradas progresivas) a medida que continúan los movimientos.
+            </div>
+          </div>
+          <div class="image-text-container">
+            <img src="assets/imagenes/t.m-04.png" alt="Imagen circular">
+            <div class="text-box5">
+                <h5>Temblor</h5>
+                Ocurre principalmente en reposo (conocido como temblor en reposo) y disminuye durante el sueño y cuando la parte
+               del cuerpo está activamente en uso. Tiende a ocurrir en las manos, pero también puede aparecer en otras partes
+                del cuerpo, incluyendo el labio inferior, la mandíbula o la pierna. Estos temblores pueden interferir con las actividades
+                 de rutina como afeitarse, vestirse, escribir y muchas otras tareas que requieren una coordinación motora fina.
+            </div>
+          </div>
+          <div class="image-text-container">
+            <img src="assets/imagenes/t.m-05.png" alt="Imagen circular">
+            <div class="text-box5">
+              <h5>Rigidez</h5>
+              Se experimenta como inflexibilidad de los brazos o piernas más allá de lo que la persona podría sentir como envejecimiento
+               normal o por artritis. Esto puede resultar en molestias o dolor en los músculos o las articulaciones afectadas.
+            </div>
+          </div>
+
+
+
+          <style>
+            .image-text-container {
+              display: flex;
+              align-items: center;
+              gap:3%; /* Espacio entre la imagen y el texto */
+            margin-right: 120px;            }
+        
+            .image-text-container img {
+              width: 350px; /* Tamaño de la imagen */
+              height: 350px;
+              border-radius: 50%; /* Hace la imagen circular */
+              object-fit: cover;
+              margin: 5% 0% 0% 10%;
+              box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+            }
+        
+            @media screen and (max-width: 600px) {
+            .image-text-container {
+              display: grid;
+              align-items: center;
+            margin-right: 0px;            
+        }
+        h5{
+            margin: 0;
+        }
+
+        
+            .image-text-container img {
+              width: 250px; /* Tamaño de la imagen */
+              height: 250px;
+              align-items: center;
+              margin: 4% 0 1% 20%;
+            }
+            .text-box5 {
+      width: 83%; /* Opcional para ocupar todo el ancho en móvil */
+      margin: 0px 30px 20px 30px ;
+
+  }
+            }
+
+          </style>
+
+    
+        <h4>Tratamientos</h4>
+        <div class="container">
+            <div class="text-box2">
+        Se refiere a las acciones y procedimientos médicos diseñados para aliviar o controlar una enfermedad, manejar sus síntomas y 
+        prevenir complicaciones. Aunque no existe una cura definitiva para la Enfermedad de Parkinson (EP), los tratamientos están orientados a 
+        mejorar la calidad de vida de los pacientes mediante el control de los síntomas a largo plazo. Estos pueden incluir medicamentos para
+        optimizar los niveles de dopamina, cirugía en casos avanzados como la estimulación cerebral profunda, y terapias físicas y ocupacionales 
+        que ayudan a mantener la movilidad y la fuerza muscular. Además, cambios en el estilo de vida, apoyo psicológico y otros enfoques terapéuticos 
+        pueden complementar el tratamiento para abordar las necesidades específicas de cada paciente.<br>
+        &nbsp;&nbsp;&nbsp;La Enfermedad de Parkinson no solo afecta el control motor, sino que también impacta otros aspectos de la salud, dando lugar
+             a una amplia variedad de síntomas. Estos se dividen en dos categorías principales: motores y no motores. Comprender ambas
+              dimensiones es fundamental para un diagnóstico temprano y un manejo integral de la enfermedad.
+        
+            </div>
+        <div class="text-box3">
+            <img src="assets/imagenes/dopamina.png" class="img-box2">
+    
+          </div>
+        </div>
+    
+        <h4>Síntomas motores</h4>
+        <div class="container">
+            <div class="text-box2">
+                El Parkinson afecta principalmente el sistema motor, generando dificultades en el movimiento y la coordinación.  
+                Estos síntomas pueden variar en intensidad y progresar con el tiempo, impactando la autonomía del paciente.<br>
+
+                &nbsp;&nbsp;&nbsp;1. Temblor en reposo: Movimiento rítmico involuntario, generalmente en manos, brazos o piernas, que disminuye
+                con la actividad voluntaria.<br>
+
+                &nbsp;&nbsp;2. Bradicinesia: Lentitud en los movimientos, dificultando actividades cotidianas como caminar, abotonarse
+                la ropa o escribir, reduciendo la independencia del paciente.<br>
+
+                &nbsp;&nbsp;&nbsp;3. Rigidez muscular: Aumento de la resistencia al movimiento, causando tensión en los músculos y limitando
+                la flexibilidad, lo que puede generar dolor y afectar la postura.<br>
+
+                &nbsp;&nbsp;&nbsp;4. Problemas de postura y equilibrio: Dificultad para mantener una postura erguida y estabilidad al caminar,
+                aumentando el riesgo de caídas y afectando la movilidad.<br>
+     
+            </div>
+            <div class="text-box3">
+                <img src="assets/imagenes/motor.png" class="img-box2">
+        
+              </div>
+                
+            </div>
+
+        <h4>Síntomas no motores</h4>
+        <div class="container">
+            <div class="text-box2">
+                El Parkinson también afecta diversas funciones no motoras, impactando la calidad de vida de los pacientes. 
+                Estos síntomas pueden presentarse antes de los signos motores y progresar con la enfermedad.<br>
+                &nbsp;&nbsp;&nbsp;1. Dolores musculares y articulares: La rigidez y la falta de movilidad pueden generar dolor en músculos y 
+        articulaciones, afectando la postura y la calidad de vida.<br>
+
+        &nbsp;&nbsp;&nbsp;2. Problemas emocionales como depresión y ansiedad: Los cambios en los neurotransmisores pueden provocar
+        síntomas depresivos, ansiedad y apatía, influyendo en el estado de ánimo y la motivación.<br>
+        
+        &nbsp;&nbsp;&nbsp;3. Incontinencia urinaria y estreñimiento: La alteración del sistema nervioso autónomo puede causar dificultad
+        para controlar la vejiga y el tránsito intestinal, generando molestias y afectando la rutina diaria.<br>
+        
+        &nbsp;&nbsp;&nbsp;4. Trastornos del sueño (insomnio o fragmentación del sueño): Dificultad para conciliar el sueño, despertares
+        frecuentes durante la noche o somnolencia diurna excesiva pueden impactar la energía y el bienestar general.<br>
+     
+            </div>
+            <div class="text-box3">
+                <img src="assets/imagenes/nomotor.png" class="img-box2">
+        
+              </div>
+                
+            </div>
+            <div>
+                <section id="espacio"></section>
+        </div>
+        <script>
+            // Muestra/oculta el botón cuando se desplaza la página
+            window.onscroll = function () {
+              var scrollButton = document.getElementById("scrollToTop");
+              if (document.documentElement.scrollTop > 300) {
+                scrollButton.style.display = "block";
+              } else {
+                scrollButton.style.display = "none";
+              }
+            };
+          
+            // Función para desplazarse suavemente hacia arriba
+            function scrollToTop() {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          </script>
+
+<footer>
+    <ul class="redes">
+    <a href="https://www.instagram.com/proyectolale/?utm_source=ig_web_button_share_sheet" target="new">
+        <img class="r" src="assets/imagenes/insta.png"></a>
+    </ul>
+    <p1>
+        &copy; Copyright 2025<br> Todos los derechos reservados
+    </p1>
+</footer>
+            
+        
+        <script src="" async defer></script>
+    </body>
+</html>

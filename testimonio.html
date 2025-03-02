@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LALE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<button id="scrollToTop" class="btn btn-primary" onclick="scrollToTop()">↑</button>
+
+<body>
+    <header class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Botón hamburguesa -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Logo más grande -->
+                <a href="" class="logo"><img src="assets/imagenes/lale.l.png"></a>
+            </div>
+    
+            <!-- Menú de navegación alineado a la derecha -->
+            <div class="collapse navbar-collapse navbar-right" id="navbar-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="hablemos.html">Hablemos del Parkinson</a></li>
+    
+                    <!-- Trabajemos Juntos con submenú -->
+                    <li class="dropdown">
+                        <a href="trabajemos.html" class="dropdown-toggle" id="trabajemos-link" role="button" aria-haspopup="true" aria-expanded="false">
+                            Trabajemos Juntos <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="testimonio.html">Testimonio</a></li>
+                            <li><a href="repertorio.html">Repertorio</a></li>
+                            <li><a href="directorio.html">Directorio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        $(document).ready(function () {
+            $('#trabajemos-link').click(function (e) {
+                // Verifica si el menú está abierto
+                var isOpen = $(this).parent().hasClass('open');
+    
+                if (!isOpen) {
+                    // Si está cerrado, abre el submenú y previene la navegación
+                    e.preventDefault();
+                    $(this).parent().addClass('open');
+                } else {
+                    // Si está abierto, permite navegar al enlace
+                    window.location.href = $(this).attr('href');
+                }
+            });
+        });
+    </script>
+    
+    <div class="wrap" style="background-image: url(assets/imagenes/manual-12.1.png);">
+        <div class="wrap-texto">
+            <h2>Testimonios</h2>
+        </div>
+    </div>
+    <script>
+        // Muestra/oculta el botón cuando se desplaza la página
+        window.onscroll = function () {
+          var scrollButton = document.getElementById("scrollToTop");
+          if (document.documentElement.scrollTop > 300) {
+            scrollButton.style.display = "block";
+          } else {
+            scrollButton.style.display = "none";
+          }
+        };
+      
+        // Función para desplazarse suavemente hacia arriba
+        function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      </script>
+ <footer>
+    <ul class="redes">
+    <a href="https://www.instagram.com/proyectolale/?utm_source=ig_web_button_share_sheet" target="new">
+        <img class="r" src="assets/imagenes/insta.png"></a>
+    </ul>
+    <p1>
+        &copy; Copyright 2025<br> Todos los derechos reservados
+    </p1>
+</footer>
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LALE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<button id="scrollToTop" class="btn btn-primary" onclick="scrollToTop()">↑</button>
+
+<body>
+    <header class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Botón hamburguesa -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Logo más grande -->
+                <a href="" class="logo"><img src="assets/imagenes/lale.l.png"></a>
+            </div>
+    
+            <!-- Menú de navegación alineado a la derecha -->
+            <div class="collapse navbar-collapse navbar-right" id="navbar-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="hablemos.html">Hablemos del Parkinson</a></li>
+    
+                    <!-- Trabajemos Juntos con submenú -->
+                    <li class="dropdown">
+                        <a href="trabajemos.html" class="dropdown-toggle" id="trabajemos-link" role="button" aria-haspopup="true" aria-expanded="false">
+                            Trabajemos Juntos <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="testimonio.html">Testimonio</a></li>
+                            <li><a href="repertorio.html">Repertorio</a></li>
+                            <li><a href="directorio.html">Directorio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        $(document).ready(function () {
+            $('#trabajemos-link').click(function (e) {
+                // Verifica si el menú está abierto
+                var isOpen = $(this).parent().hasClass('open');
+    
+                if (!isOpen) {
+                    // Si está cerrado, abre el submenú y previene la navegación
+                    e.preventDefault();
+                    $(this).parent().addClass('open');
+                } else {
+                    // Si está abierto, permite navegar al enlace
+                    window.location.href = $(this).attr('href');
+                }
+            });
+        });
+    </script>
+    
+    <div class="wrap" style="background-image: url(assets/imagenes/manual-12.1.png);">
+        <div class="wrap-texto">
+            <h2>Trabajemos juntos</h2>
+        </div>
+    </div>
+
+    <div>
+        <section id="espacio"></section>
+    </div>
+    <div>
+    <section id="descripcion">
+
+    <p>Explora cómo podemos trabajar juntos para generar un impacto. En esta sección encontrarás distintas formas de colaboración,
+       desde proyectos de diseño y divulgación hasta iniciativas enfocadas en la concientización del Parkinson. Elige la opción
+        que mejor se adapte a tus necesidades y descubramos juntos nuevas posibilidades.</p>
+    </section>
+    </div>
+        <div>
+          <section id="espacio"></section>
+      </div>
+    <section>
+
+    <div class="example-2 card">
+        <div class="wrapper">
+          <div class=".text-box">
+            <ul class="menu-content">
+            </ul>
+          </div>
+          <div class="data">
+            <div class="content">
+              <span class="author"><img class="t" src="assets/imagenes/laleneg.png"></span>
+              <class="title"><h1 href="testimonio.html">Testimonios</h1>
+              <p class="text">Conoce las historias de personas con Parkinson, quienes comparten tanto la frustración de las limitaciones que enfrentan 
+                como los logros que reflejan su fortaleza y resiliencia.
+</p>
+              <a href="testimonio.html" class="button">Leer más</a>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <div class="example-2 card">
+        <div class="wrapper">
+            <div class=".text-box">
+                <ul class="menu-content">
+              <li>
+              </li>
+            </ul>
+          </div>
+          <div class="data">
+            <div class="content">
+              <span class="author"><img class="t" src="assets/imagenes/laleneg.png"></span>
+              <class="title"><h1 href="directorio.html">Directorio</h1>
+              <p class="text">Aquí encontrarás un listado de instituciones que ofrecen apoyo y tratamiento especializado para el Parkinson.</p>
+              <a href="directorio.html" class="button">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="example-2 card">
+        <div class="wrapper">
+            <div class=".text-box">
+                <ul class="menu-content">
+              <li>
+              </li>
+            </ul>
+          </div>
+          <div class="data">
+            <div class="content">
+              <span class="author"><img class="t" src="assets/imagenes/laleneg.png"></span>
+              <class="title"><h1 href="repertorio.html">Repertorio</h1>
+              <p class="text">Aquí encontrarás fotografías de los tótems instalados para divulgar información y generar conciencia sobre el Parkinson.</p>
+              <a href="repertorio.html" class="button">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<style>
+/* Variables CSS */
+
+
+.cf::before,
+.cf::after {
+  content: '';
+  display: table;
+}
+
+.cf::after {
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 25px;
+  color: #F2EFE5;
+}
+
+.row {
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+/* Base styles */
+.card {
+    display: inline-block;;
+    justify-content: center; /* Centra horizontalmente */
+    width: 30%;
+    height: 40%;
+    margin: 1%;    
+    margin-left: 1.8%;    /* Añade espacio entre las tarjetas */
+    padding: 0;
+
+}
+.card .menu-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: block;
+}
+
+.card .menu-content li {
+  display: inline-block;
+}
+
+.card .menu-content a {
+  color: var(--white);
+}
+
+.card .menu-content span {
+  position: absolute;
+  left: 50%;
+  background-color: aqua;
+  top: 0;
+  font-size: 5px;
+  font-weight: 700;
+  font-family: var(--open-sans);
+  transform: translate(-50%, 0);
+}
+
+.card .wrapper {
+  background-color: var(--white);
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card .wrapper:hover .data {
+  transform: translateY(0);
+}
+
+.card .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(70px + 1em));
+  transition: transform 0.3s;
+}
+
+.card .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.card .author {
+  font-size: 20px;
+  color: #F2EFE5;
+
+}
+
+.card .title {
+  margin-top: 10px;
+
+}
+
+.card .text {
+  height: 80px;
+  margin: 0 2.5%;
+  color: #F2EFE5;
+}
+
+.card input[type='checkbox'] {
+  display: none;
+}
+
+.card input[type='checkbox']:checked + .menu-content {
+  transform: translateY(-60px);
+
+}
+.example-2 .wrapper {
+  background: url(assets/imagenes/manual.png) center / cover no-repeat;
+}
+
+.example-2 .wrapper:hover .menu-content span {
+  transform: translate(-50%, -10px);
+  opacity: 1;
+}
+
+.example-2 .header {
+  color: var(--white);
+  padding: 1em;
+}
+
+
+.example-2 .menu-content {
+  float: right;
+}
+
+.example-2 .menu-content li {
+  margin: 0 5px;
+  position: relative;
+}
+
+.example-2 .menu-content span {
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.example-2 .data {
+  transform: translateY(calc(70px + 4em));
+}
+
+.example-2 .title a {
+  color: var(--white);
+}
+
+.example-2 .button { /*Leer mas*/
+  display: block;
+  width: 100px;
+  margin: 4em auto 1em;
+  text-align: center;
+  font-size: 20px;
+  color: #F2EFE5;
+  line-height: 1;
+  position: relative;
+}
+
+.example-2 .button::after {
+  content: '\2192';
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.3s;
+}
+
+.example-2 .button:hover::after {
+  transform: translate(5px, -50%);
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 600px) {
+
+h1{
+  font-size: 20px;
+}  
+#espacio{
+  height: 5%;
+  width: 5%;
+}
+.card .text {
+font-size: 15px;
+margin: 0 .5%;
+}
+.example-2 .button { /*Leer mas*/
+  font-size: 15px;
+  line-height: 2;
+}
+.card {
+display: grid;
+padding-top: 10%;
+width: 50%;
+height: 50%;
+}
+.card .wrapper {
+min-height: 300px;
+min-width: 300px;
+}
+.example-2.card{
+  width: auto;
+  height: auto;
+}
+
+}
+</style>
+</section>
+
+<div>
+    <section id="espacio"></section>
+</div>
+<script>
+  // Muestra/oculta el botón cuando se desplaza la página
+  window.onscroll = function () {
+    var scrollButton = document.getElementById("scrollToTop");
+    if (document.documentElement.scrollTop > 300) {
+      scrollButton.style.display = "block";
+    } else {
+      scrollButton.style.display = "none";
+    }
+  };
+
+  // Función para desplazarse suavemente hacia arriba
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+<footer>
+  <ul class="redes">
+  <a href="https://www.instagram.com/proyectolale/?utm_source=ig_web_button_share_sheet" target="new">
+      <img class="r" src="assets/imagenes/insta.png"></a>
+  </ul>
+  <p1>
+      &copy; Copyright 2025<br> Todos los derechos reservados
+  </p1>
+</footer>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

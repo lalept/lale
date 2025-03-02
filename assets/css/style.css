@@ -1,0 +1,574 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+/* Estilo general */
+body {
+  font-family: "Lucida Serif", serif;
+    background-color:#F2EFE5;
+    font-size: large;
+    text-align: justify;
+    }
+  
+  a {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    color: #F62828;
+  }
+  a:hover{
+    color: #F2EFE5;
+  }
+  
+  /* header */
+
+  
+.header .logo {
+    float: left;
+    height: 70px;
+    width: auto;
+    margin: 0px 45px;
+  }
+.logo img{
+  height: 70px;
+}
+#espacio{
+    float: none;
+    height: 80px;
+    width: auto;
+  }
+
+/*parte de arriba menu*/ 
+.navbar {
+  background-color: #F2EFE5; /* Cambia este color por el que prefieras */
+  border: none;
+  border-radius: 0;
+}
+.navar-menu{
+  float: right;
+}
+
+/* Texto y enlaces del navbar */
+.navbar .navbar-nav > li > a {
+  color: #F62828;
+  text-decoration: none;
+  margin: 10px 30px;
+}
+.collapse navbar-collapse{
+  float: right;
+}
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+  color: #F2EFE5; /* Color al pasar el cursor */
+  background-color:#F62828;
+}
+/* Estilo del ícono hamburguesa */
+.navbar-toggle .icon-bar {
+  color: #F62828; /* Color de las líneas */
+}
+.navbar-default .navbar-toggle {
+  color: #F62828;
+}
+.navbar-toggle:hover {
+  background-color: #F62828;
+}
+
+
+/* Fondo al hacer scroll (opcional) */
+.navbar-fixed-top.scrolled {
+  transition: background-color 0.3s;
+}
+.logo{
+  margin-right: 550px;
+}
+/*SUBMENU*/
+.navbar-nav .dropdown-menu {
+  background-color: #F2EFE5;
+  border: none;
+  border-radius: 0;
+  width: 30px;
+}
+
+/* Enlaces del submenú */
+.navbar-nav .dropdown-menu > li > a {
+  color: #F62828;
+  display: list-item;
+}
+
+.navbar-nav .dropdown-menu > li > a:hover {
+  background-color: #F62828; /* Hover color */
+  color: #F2EFE5;
+}
+
+/* Ajuste para el ícono del caret */
+.navbar-nav .dropdown-toggle .caret {
+  border-top-color: #F2EFE5;
+  color: #F62828;
+  border-bottom-color:#F2EFE5;
+}
+
+h1{
+    padding: 20px;
+    font-size: 150px;
+    text-shadow: 0.2px 0.2px 0.4px #939393;
+    display: flex;
+    color: #F2EFE5;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center; 
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+h2{
+    padding: 20px;
+    font-size: 100px;
+    text-shadow: 0.2px 0.2px 0.4px #939393;
+    display: flex;
+    color: #F2EFE5;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center; 
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  
+}
+h3{
+    margin: 5%;
+    font-size: 35px;    
+    color: #35312B;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    text-align: center;
+}
+
+h4{
+  margin: 30px 120px 2px;
+  font-size: 50px;
+  display: flex;
+  color: #35312B;
+  justify-content: left; 
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+
+}
+h5{
+  margin-bottom: 1%;
+  font-size: 38px;
+  text-indent: 0%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+
+
+}
+h6{
+  margin: 0px 100px;
+  font-weight: normal;
+  color: #35312B;
+}
+.h7{
+  margin: 40px 100px;
+  font-weight: normal;
+  text-align: center;
+  color: #35312B;
+  text-shadow: 0.2px 0.2px 0.4px #939393;
+}
+p{
+  align-items: center;
+  font-weight: 40pt;
+  margin:0 120px;
+  text-align: justify;
+  color:#35312B;
+}
+.p3{
+  margin: 20px 120px;
+    font-weight: 40pt;
+    color:#35312B;
+    margin-left: 1.5em;   /* Desplaza todo el párrafo hacia la derecha */
+
+}
+p1{
+  font-size: 15px;
+  align-items: center;
+  color: #F2EFE5;
+}
+body {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 200%;
+    padding: 0;
+    color: #35312B;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.r {
+    display: flex;
+margin-right: 48.9%;
+    width: 5%;
+    align-items: center;
+}
+.t{
+  display: flex;
+  width: 15%;
+  background-color: #F2EFE5;
+}
+section {
+    margin-bottom: auto;
+}
+
+footer{
+    background-color: #35312B;
+    align-items: center;
+    color: #F2EFE5;
+    text-align: center;
+    padding: 10px;
+}
+
+#mapa{
+    width: 50%;
+    display: flex;
+    margin: 20px 70px;
+    float: left;
+    text-align: justify;
+
+}
+
+#map{
+    height: 200px;
+    display: flex;
+    border-color: #35312B;
+    align-items: normal;
+    margin-bottom: 10%;
+}
+.men{
+    display: flex;
+    background-color: #939393;
+    height: auto;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+}
+.two{
+    width: 50%;
+}
+/*--------------*/
+.wrap{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.wrapp{
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.wrap-texto{
+  color: #F2EFE5;
+  width: 80%;
+  height: auto;
+
+}
+/* Apartado de inicio*/
+.inter{
+  margin-bottom: 5px;
+  display:flex ;
+
+}
+.box{
+  width: 18%;
+  margin: 2px 0px;
+  align-items: flex-start; 
+  height: auto;
+  align-items: center;
+}
+.text-box {
+  margin: 20px;
+  border: 1px solid #ddd;
+  width: auto;
+  height: 200%; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.container{
+
+  display: flex;
+  justify-content: space-between; /* Espaciado uniforme entre los elementos */
+  align-items: flex-start; /* Alinea los elementos arriba */
+  width: 90%;
+  padding: 0% 2%;
+}
+.container2{
+
+  display: flex;
+  justify-content: 50%; /* Espaciado uniforme entre los elementos */
+  align-items: flex-start; /* Alinea los elementos arriba */
+  width: 90%;
+  padding: 0% 3.3% 0 0;
+}
+.text-box2 {
+  width: 50%;
+  margin: 0 20px;
+
+}
+.text-box5 {
+  width: 40%;
+  margin: 0 20px;
+
+}
+.text-box3 {
+  margin: 0;
+  width: 50%;
+  display: flex; /* Asegura que el contenido interno (como imágenes) sea flexible */
+  justify-content: center; /* Centra horizontalmente el contenido interno */
+  align-items: center; /* Centra verticalmente el contenido interno */
+  margin: 0 40px 0 0 ;
+} 
+.text-box4{
+  display: flex; /* Asegura que el contenido interno (como imágenes) sea flexible */
+  justify-content: center; /* Centra horizontalmente el contenido interno */
+  align-items: center; /* Centra verticalmente el contenido interno */
+} 
+.text-box6 {
+  width: 95%;
+  position: relative;
+  align-items: center;
+  margin: 0 0% 0 4%;
+} 
+.text-box7 {
+    display: flex;
+    width: 80%;
+    justify-content: center; 
+    align-items: center; /* Centra verticalmente el contenido interno */
+} 
+.map-container {
+  position: relative;
+  width: 100%; /* Se adapta al tamaño del contenedor */
+  margin: 0 0 0% 10%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.img-box2{
+  width: 85%; /* La imagen ocupa todo el ancho de la caja */
+  object-fit: cover;
+  }
+
+.img-box4{
+    width: 50%; /* La imagen ocupa todo el ancho de la caja */
+    margin: 20px 24%;
+
+    align-content: center;
+    }
+#scrollToTop {
+      display: none;
+      position: fixed;
+      bottom: 25px;
+      right: 40px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-align: center;
+      background-color: #F62828;
+      color: #F2EFE5;
+      border: none;
+      cursor: pointer;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+/* Diseño responsivo */
+
+/* Para teléfonos (pantallas de hasta 600px) */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+    .logo{
+      margin-right: 50px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .spin{
+      --color: var(--clr-radio-1);
+      
+      position: relative;
+      height: 50svh;
+      line-height: .9;
+
+    }
+    main {
+        padding: 10px;
+    }
+
+    section {
+        margin-bottom: 15px;
+    }
+
+    p{
+      margin: 2px 30px;
+      font-weight: 30pt;
+  }
+    h1{
+      margin: 2px;
+      font-size: 2rem;
+
+    }
+    h2{
+      font-size: 30px; 
+
+  }
+  .wrap-texto{
+    width: 100%;
+  
+  }
+
+  h4{
+      font-size: 25px;
+      margin: 27px 0 0 29px;
+    }
+  h3{
+    font-size: 25px;
+    margin: 1%;
+
+
+  }
+  h5{
+    font-size: 25px;
+    margin: 15px 27px 5px;
+
+  }
+  .text-box5 {
+      width: 98%; /* Opcional para ocupar todo el ancho en móvil */
+      margin: 30px;
+
+  }
+  .container{
+
+    width: 90%;
+    padding: 0% 2%;
+    display: grid;
+
+  }
+  .text-box2{
+    width: 98%;
+    margin: 0;  
+
+  }
+  
+  .text-box3 {
+      width: 90%; 
+      margin: 0 3%;
+  }
+  .text-box4{
+    width: 85%;
+    padding-right: 4%;
+  }
+
+  
+  .image-text-container {
+    display: grid;
+  margin-right: 120px;            }
+
+  .image-text-container img {
+    width: 150px; /* Tamaño de la imagen */
+    height: 150px;
+
+  }
+  .descripcion{
+    position: absolute;  
+    background-color: #939393;
+    height: auto;
+  }
+  .box{
+    width: 95%;
+    align-items: center;
+    margin: 2px 0px 0 8px;
+    display: grid;
+    align-items: center;
+  }
+  .text-box3{
+    width: 100%;
+
+    margin: 0  25px 0 0;
+}
+  .img-box2{
+    width: 100%; /* La imagen ocupa todo el ancho de la caja */
+    object-fit: cover;
+    margin: 8% 0 10% 0;
+    }
+  .img-box4{
+      width: 82%; /* La imagen ocupa todo el ancho de la caja */
+      margin: 0 0 0 35px ;
+      align-items: center;
+        }
+  .r {
+    align-items: center;
+          width: 10%;
+      }
+  .container2{
+  width: 90%;
+  height: auto;
+  display: grid;
+  padding: 0% 2%;
+  margin-top: 0;
+
+
+}
+  .text-box6 {
+  display: grid;
+  width: 95%;
+  align-items: center;
+  margin: 0;
+} 
+.map-container {
+  margin: 6% 0 13% 0%;
+  height: auto;
+
+}
+
+}
+
+/* Para tablets e iPads (pantallas de 601px a 900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/* Para laptops y pantallas grandes (pantallas mayores a 900px) */
+@media screen and (min-width: 901px) {
+    header {
+        padding: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}

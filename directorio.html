@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LALE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<button id="scrollToTop" class="btn btn-primary" onclick="scrollToTop()">↑</button>
+
+<body>
+    <header class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Botón hamburguesa -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Logo más grande -->
+                <a href="" class="logo"><img src="assets/imagenes/lale.l.png"></a>
+            </div>
+    
+            <!-- Menú de navegación alineado a la derecha -->
+            <div class="collapse navbar-collapse navbar-right" id="navbar-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="hablemos.html">Hablemos del Parkinson</a></li>
+    
+                    <!-- Trabajemos Juntos con submenú -->
+                    <li class="dropdown">
+                        <a href="trabajemos.html" class="dropdown-toggle" id="trabajemos-link" role="button" aria-haspopup="true" aria-expanded="false">
+                            Trabajemos Juntos <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="testimonio.html">Testimonio</a></li>
+                            <li><a href="repertorio.html">Repertorio</a></li>
+                            <li><a href="directorio.html">Directorio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        $(document).ready(function () {
+            $('#trabajemos-link').click(function (e) {
+                // Verifica si el menú está abierto
+                var isOpen = $(this).parent().hasClass('open');
+    
+                if (!isOpen) {
+                    // Si está cerrado, abre el submenú y previene la navegación
+                    e.preventDefault();
+                    $(this).parent().addClass('open');
+                } else {
+                    // Si está abierto, permite navegar al enlace
+                    window.location.href = $(this).attr('href');
+                }
+            });
+        });
+    </script>
+    
+    <div class="wrap" style="background-image: url(assets/imagenes/manual-12.1.png);">
+        <div class="wrap-texto">
+            <h2>Directorio</h2>
+        </div>
+    </div>
+<div>
+<section id="espacio"></section>
+</div>
+<div>
+<section id="descripcion"> 
+    <p>En esta sección encontrarás un listado de instituciones y organizaciones especializadas en el tratamiento, diagnóstico y apoyo para personas
+        con Parkinson. 
+        Nuestro objetivo es facilitarte el acceso a recursos confiables y profesionales que puedan acompañarte en cada etapa del proceso.</p>
+
+</section>    
+</div>
+<div>
+    <section id="espacio"></section>
+    </div>
+
+<div class="container2">
+    <div class="text-box6">
+        <h5>Asociación Mexicana de Parkison, A.C</h5> 
+        Una organización sin fines de lucro que ofrece orientación, talleres, y grupos de apoyo para pacientes con Parkinson y sus familias.<br>
+         También organiza actividades educativas y de concienciación sobre la enfermedad.<br>
+         Contacto: www.amp.org.mx<br> Tel: 55 1234 5678<br>Ciudad de México.
+    </div>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7470.423543704803!2d-99.15735213968766!3d19.365248862447316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffb4fbcc4dfb%3A0x865e74ed905f11af!2sAsociaci%C3%B3n%20Mexicana%20Parkinson%20AC!5e0!3m2!1ses-419!2smx!4v1736633310001!5m2!1ses-419!2smx" 
+            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <style>
+        @media screen and (max-width: 600px) {
+            h5{
+                margin: 8px 0;
+            }
+
+            #espacio{
+                height: 10px;
+            }
+        }
+    </style>
+</div>
+<div class="container2">
+    <div class="text-box6">
+        <h5>Centro Médico ABC</h5> 
+        Reconocido por su atención de alta calidad, este centro cuenta con especialistas en neurología y servicios personalizados para el manejo de trastornos del movimiento, incluidos los síntomas del Parkinson.<br>
+        Servicios destacados: Consultas neurológicas, terapia física, programas de rehabilitación.<br>
+        Contacto: www.abchospital.com <br>Tel: 55 5230 8000 <br>Ubicación: Observatorio, Ciudad de México.
+    </div>
+    <div class="map-container">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2805195818974!2d-99.2085426151948!3d19.40028193513106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201c39ccd150d%3A0x13cc0a0fdc777f5d!2sCentro%20M%C3%A9dico%20ABC%20Observatorio!5e0!3m2!1ses-419!2smx!4v1736637963434!5m2!1ses-419!2smx" 
+        width="600" height="400"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+</div>
+
+<div class="container2">
+    <div class="text-box6">
+        <h5>Instituto Nacional de Neurología y Neurocirugía Manuel Velasco Suárez</h5> 
+        Referente nacional para el diagnóstico y tratamiento de enfermedades neurológicas complejas. Ofrece atención multidisciplinaria y acceso a estudios avanzados como resonancias magnéticas y evaluaciones neuropsicológicas.
+            <br>Servicios destacados: Tratamientos innovadores, investigación clínica, programas educativos.
+            <br>Contacto: www.innn.salud.gob.mx<br> Tel: 55 5655 1900<br>Ubicación: Tlalpan, Ciudad de México.
+    </div>
+    <div class="map-container">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.813204169576!2d-99.17800822414655!3d19.290487781958724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00626f3bce2b%3A0x1a18dd918ed64cba!2sInstituto%20Nacional%20de%20Neurolog%C3%ADa%20y%20Neurocirug%C3%ADa!5e0!3m2!1ses-419!2smx!4v1736638103109!5m2!1ses-419!2smx" 
+        width="600" height="400"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+            
+    </div>
+</div>
+
+<div class="container2">
+    <div class="text-box6">
+        <h5>Médica Sur</h5> 
+        Un hospital privado que combina tecnología de vanguardia con atención humana. Su equipo de especialistas en neurología ofrece diagnóstico y manejo integral del Parkinson, incluyendo opciones quirúrgicas cuando son necesarias.
+        <br>Servicios destacados: Consulta externa, pruebas especializadas, cirugía de estimulación cerebral profunda (DBS).<br>
+        Contacto: www.medicasur.com.mx <br>Tel: 55 5424 7200<br> Ubicación: Tlalpan, Ciudad de México.
+    </div>
+    <div class="map-container">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60243.17229163107!2d-99.2392378266097!3d19.31720097585708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce005bf1c00001%3A0x7608aa8d05f72564!2sM%C3%A9dica%20Sur!5e0!3m2!1ses-419!2smx!4v1736664606010!5m2!1ses-419!2smx"
+        width="600" height="400"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>        
+    </div>
+</div>
+
+<div class="container2">
+    <div class="text-box6">
+        <h5>Salud Digital Fundación Carlos Slim</h5> 
+        Una iniciativa digital que ofrece herramientas educativas gratuitas para pacientes con Parkinson y sus cuidadores. Incluye programas de detección temprana y consejos prácticos para el manejo diario de la enfermedad.
+        <br>Servicios destacados: Cursos en línea, guías descargables, programas interactivos.<br>Contacto: www.salud.carlosslim.org
+    </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2805195818974!2d-99.2085426151948!3d19.40028193513106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201c39ccd150d%3A0x13cc0a0fdc777f5d!2sCentro%20M%C3%A9dico%20ABC%20Observatorio!5e0!3m2!1ses-419!2smx!4v1736637963434!5m2!1ses-419!2smx" 
+        width="600" height="400"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+    </div>
+</div>
+
+<div class="container2">
+    <div class="text-box6">
+        <h5>Clínica de Movimientos Anormales del Centro Médico Nacional Siglo XXI</h5> 
+        Este centro del IMSS está especializado en la evaluación y tratamiento de trastornos del movimiento, con un enfoque integral para mejorar la calidad de vida de los pacientes.
+        <br>Servicios destacados: Consultas médicas especializadas, terapias físicas y psicológicas, acceso a medicamentos innovadores.
+            <br>Tel: 55 5627 6900<br>Ubicación: Cuauhtémoc, Ciudad de México.
+    </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240870.63758497586!2d-99.26259375188344!3d19.386304528278433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff186212332f%3A0xb3f49e0900720c7e!2sCentro%20M%C3%A9dico%20Nacional%20Siglo%20XXI!5e0!3m2!1ses-419!2smx!4v1736663763619!5m2!1ses-419!2smx"
+        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+
+<div class="container2">
+    <div class="text-box6">
+        <h5>Unidad de Trastornos de Movimiento y Sueño - Hospital General Ajusco Medio</h5> 
+        Esta unidad combina tecnología avanzada con un enfoque personalizado para tratar a pacientes con Parkinson. Ofrecen programas de rehabilitación específicos y asesoría sobre el manejo del sueño, un aspecto comúnmente afectado en esta enfermedad.
+        <br>Servicios destacados: Rehabilitación física, estudios del sueño, seguimiento neurológico continuo.
+            <br>Tel: 55 5849 0000<br>Ubicación: Tlalpan, Ciudad de México.
+    </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.236400567359!2d-99.21034392414695!3d19.272083181973265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdfe3938b55ff1%3A0x401f96ad3b509c25!2sHospital%20General%20Ajusco%20Medio!5e0!3m2!1ses-419!2smx!4v1736663623417!5m2!1ses-419!2smx" 
+        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+
+
+    <section id="espacio"></section>
+
+    <script>
+        // Muestra/oculta el botón cuando se desplaza la página
+        window.onscroll = function () {
+          var scrollButton = document.getElementById("scrollToTop");
+          if (document.documentElement.scrollTop > 300) {
+            scrollButton.style.display = "block";
+          } else {
+            scrollButton.style.display = "none";
+          }
+        };
+      
+        // Función para desplazarse suavemente hacia arriba
+        function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      </script>
+ <footer>
+    <ul class="redes">
+    <a href="https://www.instagram.com/proyectolale/?utm_source=ig_web_button_share_sheet" target="new">
+        <img class="r" src="assets/imagenes/insta.png"></a>
+    </ul>
+    <p1>
+        &copy; Copyright 2025<br> Todos los derechos reservados
+    </p1>
+</footer>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
