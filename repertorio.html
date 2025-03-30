@@ -74,16 +74,93 @@
     </div>
     <div>
         <section id="descripcion">
-        Nuestro tótem informativo fue instalado en dos espacios clave: el cuarto piso de la UAM Cuajimalpa y el Centro Social Santa Lucía. Su propósito es generar 
+        <p>Nuestro tótem informativo fue instalado en dos espacios clave: el cuarto piso de la UAM Cuajimalpa y el Centro Social Santa Lucía. Su propósito es generar 
         conciencia sobre la enfermedad de Parkinson a través de información accesible y comprensible para todo el público.  
         En él, se presentan datos estadísticos, una explicación sobre los síntomas iniciales y frases recopiladas de personas con Parkinson,
         quienes compartieron sus experiencias y emociones. Además, la instalación estuvo acompañada por cinco carteles con frases que reflejan sus vivencias con la enfermedad.<br>  
         Junto al tótem, también se distribuyeron trípticos informativos, donde se pueden encontrar datos sobre el Parkinson en México, sus etapas,
-        un directorio de recursos y el objetivo de nuestro proyecto LALE.  
-            
-        </section>    
-        </div>
+        un directorio de recursos y el objetivo de nuestro proyecto LALE.</p>
+         </section>    
+    </div>
+    <style>
+body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .thumbnail {
+            width: 150px;
+            height: 100px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="imagen1.jpg" class="thumbnail" onclick="openModal('sis1.jpg')">
+        <img src="imagen2.jpg" class="thumbnail" onclick="openModal('sis2.jpg')">
+        <img src="imagen3.jpg" class="thumbnail" onclick="openModal('sis3.jpg')">
+        <img src="imagen3.jpg" class="thumbnail" onclick="openModal('sis4.jpg')">
+        <img src="imagen3.jpg" class="thumbnail" onclick="openModal('sis5.jpg')">
+        <img src="imagen3.jpg" class="thumbnail" onclick="openModal('sis6.jpg')">
 
+    </div>
+    
+    <div class="modal" id="imageModal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modalImage">
+    </div>
+    
+    <script>
+        function openModal(src) {
+            document.getElementById('modalImage').src = src;
+            document.getElementById('imageModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+    </script>
+        <h4>Tótem</h4>
+    
+        <h4>Carteles</h4>
+    
+        <h4>Tripticos</h4>
 
 
 
