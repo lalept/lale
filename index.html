@@ -451,7 +451,14 @@ h1{
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
+    fetch('https://api.countapi.xyz/hit/lalecom/visitas')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visitas').innerText = data.value;
+    });
 </script>
+    <p>Visitas: <span id="visitas">0</span></p>
+
   <footer>
         <ul class="redes">
         <a href="https://www.instagram.com/proyectolale/?utm_source=ig_web_button_share_sheet" target="new">
