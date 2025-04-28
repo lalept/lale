@@ -131,15 +131,15 @@ h2{
 }
 h3{
     margin: 5%;
-    font-size: 35px;    
+    font-size: 45px;    
     color: #35312B;
     font-family: 'Gill Sans', 'Gill Sans MT';
     text-align: center;
 }
 
 h4{
-  margin: 30px 120px 2px;
-  font-size: 50px;
+  margin: 30px 120px 3px;
+  font-size: 60px;
   display: flex;
   color: #35312B;
   justify-content: left; 
@@ -148,7 +148,7 @@ h4{
 }
 h5{
   margin-bottom: 1%;
-  font-size: 38px;
+  font-size: 48px;
   text-indent: 0%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 
@@ -168,14 +168,14 @@ h6{
 }
 p{
   align-items: center;
-  font-weight: 40pt;
+  font-weight: 50pt;
   margin:0 120px;
   text-align: justify;
   color:#35312B;
 }
 .p3{
   margin: 20px 120px;
-    font-weight: 40pt;
+    font-weight: 50pt;
     color:#35312B;
     margin-left: 1.5em;   /* Desplaza todo el párrafo hacia la derecha */
 
@@ -188,7 +188,7 @@ p1{
 body {
     line-height: 1.6;
     margin: 0;
-    font-size: 200%;
+    font-size: 210%;
     padding: 0;
     color: #35312B;
 }
@@ -421,7 +421,7 @@ footer{
 
     p{
       margin: 2px 30px;
-      font-weight: 30pt;
+      font-weight: 35pt;
   }
     h1{
       margin: 2px;
@@ -438,17 +438,17 @@ footer{
   }
 
   h4{
-      font-size: 25px;
+      font-size: 30px;
       margin: 27px 0 0 29px;
     }
   h3{
-    font-size: 25px;
+    font-size: 30px;
     margin: 1%;
 
 
   }
   h5{
-    font-size: 25px;
+    font-size: 30px;
     margin: 15px 27px 5px;
 
   }
