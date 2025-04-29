@@ -1,248 +1,83 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>LALE</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="assets/css/style.css">
-      </head>
-      <button id="scrollToTop" class="btn btn-primary" onclick="scrollToTop()">↑</button>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LALE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/imagenes/2.1lale.png" type="image/png">
 
-      <body>
-          <header class="navbar navbar-default">
-              <div class="container-fluid">
-                  <div class="navbar-header">
-                      <!-- Botón hamburguesa -->
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                      </button>
-                      <a href="" class="logo"><img src="assets/imagenes/lale.l.png"></a>
-                  </div>
-          
-                  <!-- Menú de navegación alineado a la derecha -->
-                  <div class="collapse navbar-collapse navbar-right" id="navbar-menu">
-                      <ul class="nav navbar-nav">
-                          <li><a href="index.html">Inicio</a></li>
-                          <li><a href="hablemos.html">Hablemos del Parkinson</a></li>
-          
-                          <!-- Trabajemos Juntos con submenú -->
-                          <li class="dropdown">
-                              <a href="trabajemos.html" class="dropdown-toggle" id="trabajemos-link" role="button" aria-haspopup="true" aria-expanded="false">
-                                  Trabajemos Juntos <span class="caret"></span>
-                              </a>
-                              <ul class="dropdown-menu">
-                                  <li><a href="testimonio.html">Conecta</a></li>
-                                  <li><a href="repertorio.html">Repertorio</a></li>
-                                  <li><a href="directorio.html">Directorio</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </header>
-          
-          <script>
-              $(document).ready(function () {
-                  $('#trabajemos-link').click(function (e) {
-                      // Verifica si el menú está abierto
-                      var isOpen = $(this).parent().hasClass('open');
-          
-                      if (!isOpen) {
-                          // Si está cerrado, abre el submenú y previene la navegación
-                          e.preventDefault();
-                          $(this).parent().addClass('open');
-                      } else {
-                          // Si está abierto, permite navegar al enlace
-                          window.location.href = $(this).attr('href');
-                      }
-                  });
-              });
-          </script>
+</head>
+<button id="scrollToTop" class="btn btn-primary" onclick="scrollToTop()">↑</button>
+
+<body>
+    <header class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Botón hamburguesa -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Logo más grande -->
+                <a href="" class="logo"><img src="assets/imagenes/lale.l.png"></a>
+            </div>
+    
+            <!-- Menú de navegación alineado a la derecha -->
+            <div class="collapse navbar-collapse navbar-right" id="navbar-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="hablemos.html">Hablemos del Parkinson</a></li>
+    
+                    <!-- Trabajemos Juntos con submenú -->
+                    <li class="dropdown">
+                        <a href="trabajemos.html" class="dropdown-toggle" id="trabajemos-link" role="button" aria-haspopup="true" aria-expanded="false">
+                            Trabajemos Juntos <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="testimonio.html">Testimonio</a></li>
+                            <li><a href="repertorio.html">Repertorio</a></li>
+                            <li><a href="directorio.html">Directorio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        $(document).ready(function () {
+            $('#trabajemos-link').click(function (e) {
+                // Verifica si el menú está abierto
+                var isOpen = $(this).parent().hasClass('open');
+    
+                if (!isOpen) {
+                    // Si está cerrado, abre el submenú y previene la navegación
+                    e.preventDefault();
+                    $(this).parent().addClass('open');
+                } else {
+                    // Si está abierto, permite navegar al enlace
+                    window.location.href = $(this).attr('href');
+                }
+            });
+        });
+    </script>
+    
+    <div class="wrap" style="background-image: url(assets/imagenes/hh.png);">
+        <div class="wrap-texto">
+          <span class="author"><img class="l" src="assets/imagenes/LALEII.png"></span>
+
+        </div>
+</div>
 <div>
-    <div class="controls">
-        <input type="radio" name="scheme" checked>
-        <input type="radio" name="scheme" >
-        <input type="radio" name="scheme">
-        <input type="radio" name="scheme">
-      </div>
-      <div class="spin">
-        <h1>L A L E</h1>
-      </div>
-
-<style>
-:root{
-  --clr-radio-1: #F62828;
-  --clr-radio-2: #FBD485;
-  --clr-radio-3: #99B3CE;
-  --clr-radio-4: #4D7559;
-}
-
-body{
-  margin: 0;
-
-}
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-.spin{
-  --color: var(--clr-radio-1);
-  
-  position: relative;
-  height: 100svh;
-  padding: 1rem;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  line-height: .9;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-
-
-  background-color: #F2EFE5;
-  background-image: linear-gradient(var(--angle), #F2EFE5 50%, var(--color) 50%);
-  animation: bg-rotate 10000ms linear infinite;
-}
-@keyframes bg-rotate {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
-}
-
-h1{
-  position: relative;
-  color: var(--color);
-  filter:  invert(100%);
-  mix-blend-mode: difference;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-
-  /* styling  */
-  font-size: 9rem;
-  letter-spacing: .25em;
-  text-transform: uppercase;
-
-}
-.controls{
-  position: fixed;
-  top: 1rem;
-  left: 50%;
-  translate: -50% 0;
-  border: 1px solid rgba(255 255 255 /.5);
-  background-color: rgba(0 0 0 / .15);
-  border-radius: 2px;
-  padding: .25rem;
-  display: flex;
-  gap: 0.25rem;
-  z-index: 10;
-}
-.controls:has(input[type=radio]:nth-child(1):checked) + .spin{
- --color: var(--clr-radio-1);
-}
-.controls:has(input[type=radio]:nth-child(2):checked) + .spin{
- --color: var(--clr-radio-2);
-}
-.controls:has(input[type=radio]:nth-child(3):checked) + .spin{
- --color: var(--clr-radio-3);
-}
-.controls:has(input[type=radio]:nth-child(4):checked) + .spin{
- --color: var(--clr-radio-4);
-}
-
-.controls > input{
-  --_size: 1.5rem;
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-  appearance: none;
-  border: 1px solid rgba(255 255 255 /.5);
-  outline: none;
-  border-radius: 50%;
-  width: var(--_size);
-  height: var(--_size);
-  background-color: var(--radio-clr);
-  scale: .8;
-  transition: scale 300ms ease-in-out;
-}
-.controls > input:nth-child(1){
-  --radio-clr: var(--clr-radio-1);
-}
-.controls > input:nth-child(2){
-  --radio-clr: var(--clr-radio-2);
-}
-.controls > input:nth-child(3){
-  --radio-clr: var(--clr-radio-3);
-}
-.controls > input:nth-child(4){
-  --radio-clr: var(--clr-radio-4);
-}
-
-.controls > input:focus-visible,
-.controls > input:hover{
-   scale: 1;
-}
-.controls > input:checked{
-  scale: 1.05;
-}
-
-
-
-/*h1::after{
-  content: attr(data-title);
-  position: absolute;
-  inset: 0;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-
-  display: grid;
-  place-content: center;
-  color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-
-  mix-blend-mode: color-dodge;
-  z-index: 2;
-
-}*/
-@media screen and (max-width: 600px) {
-h1{
-  font-size: 7rem;
-  letter-spacing: .20em;
-}
-}
-</style>
-
-
-      
-
-    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
-    <script type="importmap">
-    {
-      "imports": {
-        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
-        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
-      }
-    }
-    </script>
-    <script type="module">
-      import * as bootstrap from 'bootstrap'
-
-      new bootstrap.Popover(document.getElementById('popoverButton'))
-    </script>
-
-    </div>
+    <section id="espacio"></section>
+</div>
 
 <h4>¿Quienes somos?</h4>
 
