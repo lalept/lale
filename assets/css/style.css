@@ -221,6 +221,10 @@ margin-right: 48.9%;
   width: 15%;
   background-color: #F2EFE5;
 }
+.l{
+  display: flex;
+  width: 25%;
+}
 section {
     margin-bottom: auto;
 }
