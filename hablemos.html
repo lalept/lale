@@ -174,11 +174,20 @@ con el tiempo, afectando primero un lado del cuerpo y extendiéndose eventualmen
             }
         .video {
       width: 100%;
+      display: flex;
+      align-items: center;
       max-width: 600px;
       height: auto;
     }
         .folleto{
             align-items: center;
+        }
+                      iframe {
+            width: 80%;
+            margin: 2% 10%;
+            align-items: center;
+            height: 750px;
+            border: none;
         }
             @media screen and (max-width: 600px) {
             .image-text-container {
@@ -202,6 +211,20 @@ con el tiempo, afectando primero un lado del cuerpo y extendiéndose eventualmen
       margin: 0px 30px 20px 30px ;
 
   }
+        .thumbnail {
+            width: 140px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        iframe {
+            width: 75%;
+            margin: 2% 10%;
+            align-items: center;
+            height: 450px;
+            border: none;
+
+        }
             }
 
           </style>
@@ -278,23 +301,10 @@ con el tiempo, afectando primero un lado del cuerpo y extendiéndose eventualmen
                 
             </div>
     <h4>Hablemos del Parkinson</h4>
-    <section id="descripcion">
+  <video controls>
     <source src="assets/imagenes/vid.mp4" type="video/mp4">
-</section>
- <h4>Referencias</h4>
-    <div class="folleto">
-        <iframe src="assets/imagenes/refe.pdf"></iframe>
-    </div>
-    <div>
-    <a href="assets/imagenes/refe.pdf" download> <p>Descargar PDF</p> </a>
-    </div>
-<div>
-    <section id="espacio"></section>
-</div>
-    <div class="modal" id="imageModal" onclick="closeModal()">
-        <span class="close">&times;</span>
-        <img id="modalImage">
-    </div>
+  </video>
+ 
     
     <script>
         function openModal(src) {
